@@ -1,5 +1,5 @@
 
-# [All the Mons - ATMons](https://www.curseforge.com/minecraft/modpacks/all-the-mons) on Curseforge
+# [All the Mods11 - ATM11](https://www.curseforge.com/minecraft/modpacks/all-the-mods-11) on Curseforge
 <!-- toc -->
 
 - [Description](#description)
