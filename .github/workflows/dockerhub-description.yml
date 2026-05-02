@@ -23,6 +23,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: ${{ secrets.DOCKERHUB_USERNAME }}/docker-atmons
-          short-description: "All the Mons Minecraft Server Docker image for Unraid (Java 21)."
+          repository: ${{ secrets.DOCKERHUB_USERNAME }}/unraid-atm11
+          short-description: "All the Mods 11 Minecraft Server Docker image for Unraid (Java 26)."
           enable-url-completion: true
