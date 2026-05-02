@@ -34,7 +34,7 @@ fi
 # ==============================
 
 if ! [[ -f "$SERVER_FILE_NAME" ]]; then
-    echo "First run detected. Installing All the Mons..."
+    echo "First run detected. Installing All the Mods11..."
 
     rm -fr config defaultconfigs kubejs mods packmenu ServerFiles-* neoforge*
 
