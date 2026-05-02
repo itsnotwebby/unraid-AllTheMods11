@@ -6,8 +6,8 @@ set -x
 # All the Mons Configuration
 # ==============================
 
-SERVER_VERSION="1.0.0-rc.4"
-SERVER_FILE_ID=7958823
+SERVER_VERSION="0.0.11"
+SERVER_FILE_ID=8017782
 SERVER_FILE_NAME="ServerFiles-${SERVER_VERSION}.zip"
 
 # Extract prefix/suffix from file ID dynamically
@@ -158,7 +158,7 @@ done
 # ==============================
 
 if [[ -f startserver.sh ]]; then
-    echo "Starting All the Mons server..."
+    echo "Starting All the Mods server..."
     chmod +x startserver.sh
     exec ./startserver.sh
 else
