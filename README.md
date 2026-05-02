@@ -24,7 +24,7 @@ Subsequent starts will launch the installed server normally.
 
 No modded Minecraft files are shipped in this image — everything is downloaded at runtime.
 
-Java 21
+Java 26
 Multi-arch support (amd64 + arm64)
 
 ## Requirements
