@@ -1,11 +1,11 @@
 # syntax=docker/dockerfile:1
 
-FROM eclipse-temurin:21-jdk
+FROM eclipse-temurin:25-jdk
 
 LABEL maintainer="itsnotwebby"
-LABEL modpack="All the Mons"
-LABEL version="1.0.0-rc4"
-LABEL description="Docker container for running the All the Mons Minecraft server on Unraid"
+LABEL modpack="All the Mods 11"
+LABEL version="0.0.11"
+LABEL description="Docker container for running the All the Mods 11 Minecraft server on Unraid"
 
 # Install required tools and clean up apt cache
 RUN apt-get update && \
