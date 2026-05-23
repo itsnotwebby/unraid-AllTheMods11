@@ -44,6 +44,6 @@ jobs:
             exit 0
           fi
 
-          git add launch.sh
+          git add launch.sh Dockerfile
           git commit -m "chore: bump ServerFiles to latest (CurseForge)"
           git push
