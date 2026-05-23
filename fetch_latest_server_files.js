@@ -122,18 +122,29 @@ async function updateLaunch(latest) {
   const launchPath = "launch.sh";
   const launch = fs.readFileSync(launchPath, "utf8");
 
-  const updated = [
+  const updatedLaunch = [
     [/^SERVER_VERSION=.*$/m, `SERVER_VERSION="${latest.serverVersion}"`],
     [/^SERVER_FILE_ID=.*$/m, `SERVER_FILE_ID=${latest.id}`],
   ].reduce((acc, [pat, rep]) => replaceOrThrow(acc, pat, rep), launch);
 
-  if (updated === launch) {
+  const dockerfilePath = "Dockerfile";
+  const dockerfile = fs.readFileSync(dockerfilePath, "utf8");
+  
+  const updatedDockerfile = replaceOrThrow(
+    dockerfile,
+    /^LABEL version=.*$/m,
+    `LABEL version="${latest.serverVersion}"`
+  );
+  
+  if (updatedLaunch === launch && updatedDockerfile === dockerfile) {
     console.log("No changes needed.");
     return;
   }
 
-  fs.writeFileSync(launchPath, updated, "utf8");
+  fs.writeFileSync(launchPath, updatedLaunch, "utf8");
+  fs.writeFileSync(dockerfilePath, updatedDockerfile, "utf8");
   console.log(`Updated ${launchPath} -> SERVER_VERSION=${latest.serverVersion}, SERVER_FILE_ID=${latest.id}`);
+  console.log(`Updated ${dockerfilePath} -> version=${latest.serverVersion}`);
 }
 
 main().catch((err) => {
