@@ -7,7 +7,7 @@
 
 import fs from "node:fs";
 
-const PROJECT_ID = 1148445; // All the Mons (your modpack project id)
+const PROJECT_ID = 1148445; // All the Mods 11 (your modpack project id)
 const BASE = "https://api.curseforge.com/v1";
 
 function mustGetEnv(name) {
