@@ -6,7 +6,6 @@ set -x
 # All the Mons Configuration
 # ==============================
 
-NEOFORGE_VERSION=26.1.2.76
 SERVER_VERSION="0.2"
 SERVER_FILE_ID=8357756
 SERVER_FILE_NAME="ServerFiles-${SERVER_VERSION}.zip"
