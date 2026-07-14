@@ -6,7 +6,7 @@ set -x
 # All the Mods11 Configuration
 # ==============================
 
-SERVER_VERSION="0.2"
+SERVER_VERSION="0.2.0"
 SERVER_FILE_ID=8357756
 SERVER_FILE_NAME="ServerFiles-${SERVER_VERSION}.zip"
 
