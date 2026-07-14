@@ -3,7 +3,7 @@ set -e
 set -x
 
 # ==============================
-# All the Mons Configuration
+# All the Mods11 Configuration
 # ==============================
 
 SERVER_VERSION="0.1.2"
