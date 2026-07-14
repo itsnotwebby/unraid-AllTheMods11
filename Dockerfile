@@ -4,7 +4,7 @@ FROM eclipse-temurin:25-jdk
 
 LABEL maintainer="itsnotwebby"
 LABEL modpack="All the Mods 11"
-LABEL version="0.1.2"
+LABEL version="0.2"
 LABEL description="Docker container for running the All the Mods 11 Minecraft server on Unraid"
 
 # Install required tools and clean up apt cache
