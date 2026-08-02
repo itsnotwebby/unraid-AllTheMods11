@@ -6,8 +6,8 @@ set -x
 # All the Mods11 Configuration
 # ==============================
 
-SERVER_VERSION="0.2.1"
-SERVER_FILE_ID=8431883
+SERVER_VERSION="0.3.0-beta"
+SERVER_FILE_ID=8560507
 SERVER_FILE_NAME="ServerFiles-${SERVER_VERSION}.zip"
 
 # Extract prefix/suffix from file ID dynamically
